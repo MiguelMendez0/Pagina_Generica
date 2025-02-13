@@ -28,12 +28,11 @@ main{
 
 main .grid{
     width: 80%;
-    height: 100vh;
+    height: auto;
     background-color: rgb(107, 107, 107);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 100px);
-    row-gap: 35%;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 main .grid .item{
@@ -85,6 +84,7 @@ input[type="number"] {
 
 /*DIRECCION DEL TEXTO DENTRO DEL INPUT VALUE 1  */
 input[type="number"]{
+    width: 30%;
     text-align: center;
 }
 
@@ -97,8 +97,34 @@ button.add{
 }
 
 
-@media(max-width:766px) and (orientation:portrait){
-    .fondo1 img{
+@media (max-width: 766px) {
+    .fondo1 img {
+        width: 100%;
+    }
+
+    main .grid {
+        width: 100%;
+        height:max-content;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    main .grid .item {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .grid .item img {
+        width: 30%;
+    }
+
+    .grid .item h4 {
+        font-size: 10px;
+    }
+
+    .grid .item .add {
         width: 100%;
     }
 }
+
+
