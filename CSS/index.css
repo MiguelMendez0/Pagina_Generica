@@ -1,0 +1,104 @@
+body{
+    background-color: rgb(190, 190, 190);
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+    height: auto;
+    background-color: rgb(53, 53, 53);
+    text-align: center;
+    justify-items: center;
+}
+
+.fondo1{
+    width: 100%;
+    height: 50vh;
+}
+
+.fondo1 img{
+    width: 80%;
+    height: 50vh;
+    object-fit: cover;
+}
+
+main .grid{
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(107, 107, 107);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    row-gap: 35%;
+}
+
+main .grid .item{
+    width: 100%;
+    height: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item img{
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+}
+
+h4.product-name {
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+}
+
+p.price{
+    font-size: 12px;
+    color: white;
+}
+
+main .grid .item .units{
+    width: 100%;
+    height: auto;
+}
+
+.units button{
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
+
+/* QUITARLE LAS FLECHAS ARRIVA ABAJO EN EL INPUT */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/*DIRECCION DEL TEXTO DENTRO DEL INPUT VALUE 1  */
+input[type="number"]{
+    text-align: center;
+}
+
+button.add{
+    width: 20%;
+    height: 40%;
+    background-color: rgb(24, 72, 161);
+    color: white;
+    margin-top: 6%;
+}
+
+
+@media(max-width:766px) and (orientation:portrait){
+    .fondo1 img{
+        width: 100%;
+    }
+}
