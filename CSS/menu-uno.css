@@ -65,3 +65,18 @@ main{
     height: auto;
 }
 
+@media (max-width: 766px){
+    .container-formulario1{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container-formulario1 form{
+        width: 100%;
+    }
+
+    .container-formulario1 img{
+        width: 100%;
+    }
+}
