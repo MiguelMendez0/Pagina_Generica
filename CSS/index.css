@@ -9,6 +9,7 @@ body{
 
 main{
     width: 100%;
+    padding-bottom: 5%;
     height: auto;
     background-color: rgb(53, 53, 53);
     text-align: center;
@@ -30,6 +31,7 @@ main .grid{
     width: 80%;
     height: auto;
     background-color: rgb(107, 107, 107);
+    padding-bottom: 2%;
     display: grid;
     grid-template-columns: repeat(3, 2fr);
     grid-template-rows: repeat(2, 1fr);

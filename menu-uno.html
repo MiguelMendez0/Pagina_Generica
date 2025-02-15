@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/menu-uno.css">
+    <!-- Bootstrap CDN Y SCRIPT --> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>menu-uno</title>
+</head>
+<body>
+    <div id="header-container"></div>
+    <main>
+        <div class="container">
+            <h2 class="h2">Encavezado de segmento</h2>
+            <div class="grid-menu-uno">
+                <div class="item-menu-uno">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus corrupti ut sint dolores quisquam vero molestias amet minus earum, velit deleniti quam ipsam facere officia perspiciatis omnis impedit rerum! Sint!</p>
+                </div>
+                <div class="item-menu-uno">
+                    <img src="/ASSETS/MAIN/Logo.png" alt="Logo">
+                </div>
+            </div>
+            
+            <div class="container-formulario1">
+                <form>
+                    <h2>CONTRATA NUESTROS SERVICIOS</h2>
+            
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="name" required>
+            
+                    <label for="primer-apellido">Primer Apellido</label>
+                    <input type="text" name="apellido_uno" id="apellido-1" required>
+            
+                    <label for="segundo-apellido">Segundo Apellido</label>
+                    <input type="text" name="apellido_dos" id="apellido-2" required>
+            
+                    <label for="nacimiento">Fecha de nacimiento</label>
+                    <input type="date" name="fecha_nacimiento" id="fecha-nacimiento" required>
+            
+                    <label for="codigo-postal">Código Postal</label>
+                    <input type="text" id="codigo-postal" name="cp" required>
+            
+                    <label for="pais">País</label>
+                    <input type="text" id="pais" name="pais" readonly>
+            
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" name="estado" readonly>
+            
+                    <label for="municipio">Municipio</label>
+                    <input type="text" id="municipio" name="municipio" required>
+            
+                    <label for="colonia">Colonia</label>
+                    <input type="text" id="colonia" name="colonia" required>
+            
+                    <label for="calle">Calle</label>
+                    <input type="text" id="calle" name="calle" required>
+            
+                    <label for="num-ext">Número Exterior</label>
+                    <input type="number" name="num_ext" id="num-ext" min="1">
+            
+                    <label for="num-int">Número Interior</label>
+                    <input type="number" name="num_int" id="num-int" min="1">
+            
+                    <button type="submit">Enviar</button>
+                </form>
+                <img src="ASSETS/MAIN/Logo.png" alt="Logo">
+            </div>
+        </div>
+    </main>
+    <div id="footer-container"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWqYQAniQLOuWOSal10pEzZmJCaGyXqZI&libraries=places"></script>
+    <script src="/JS/componentes.js"></script>
+    <script src="/JS/autorrellenado-formulario.js"></script>
+</body>
+</html>

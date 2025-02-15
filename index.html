@@ -22,64 +22,9 @@
                 <h4 class="product-name" id="nombre-producto">Nombre Producto</h4>
                 <p class="price" id="precio">$100.00</p>
                 <div class="units" id="unidades">
-                    <button id="menor">-</button>
-                    <input type="number" id="cantidad" value="1" >
-                    <button id="mayor">+</button>
-                </div>
-                <button class="add" id="agregar">Agregar</button>
-            </div>
-            <div class="item">
-                <img src="/ASSETS/MAIN/Logo.png">
-                <h4 class="product-name" id="nombre-producto">Nombre Producto</h4>
-                <p class="price" id="precio">$100.00</p>
-                <div class="units" id="unidades">
-                    <button id="menor">-</button>
-                    <input type="number" id="cantidad" value="1" >
-                    <button id="mayor">+</button>
-                </div>
-                <button class="add" id="agregar">Agregar</button>
-            </div>
-            <div class="item">
-                <img src="/ASSETS/MAIN/Logo.png">
-                <h4 class="product-name" id="nombre-producto">Nombre Producto</h4>
-                <p class="price" id="precio">$100.00</p>
-                <div class="units" id="unidades">
-                    <button id="menor">-</button>
-                    <input type="number" id="cantidad" value="1" >
-                    <button id="mayor">+</button>
-                </div>
-                <button class="add" id="agregar">Agregar</button>
-            </div>
-            <div class="item">
-                <img src="/ASSETS/MAIN/Logo.png">
-                <h4 class="product-name" id="nombre-producto">Nombre Producto</h4>
-                <p class="price" id="precio">$100.00</p>
-                <div class="units" id="unidades">
-                    <button id="menor">-</button>
-                    <input type="number" id="cantidad" value="1" >
-                    <button id="mayor">+</button>
-                </div>
-                <button class="add" id="agregar">Agregar</button>
-            </div>
-            <div class="item">
-                <img src="/ASSETS/MAIN/Logo.png">
-                <h4 class="product-name" id="nombre-producto">Nombre Producto</h4>
-                <p class="price" id="precio">$100.00</p>
-                <div class="units" id="unidades">
-                    <button id="menor">-</button>
-                    <input type="number" id="cantidad" value="1" >
-                    <button id="mayor">+</button>
-                </div>
-                <button class="add" id="agregar">Agregar</button>
-            </div>
-            <div class="item">
-                <img src="/ASSETS/MAIN/Logo.png">
-                <h4 class="product-name" id="nombre-producto">Nombre Producto</h4>
-                <p class="price" id="precio">$100.00</p>
-                <div class="units" id="unidades">
-                    <button id="menor">-</button>
-                    <input type="number" id="cantidad" value="1" >
-                    <button id="mayor">+</button>
+                    <button onclick="disminuir()">-</button>
+                    <input type="number" id="cantidad" value="1" min="1">
+                    <button onclick="incrementar()">+</button>
                 </div>
                 <button class="add" id="agregar">Agregar</button>
             </div>
@@ -88,5 +33,6 @@
 
     <div id="footer-container"></div>
     <script src="/JS/componentes.js"></script>
+    <script src="/JS/agregar-quitar.js"></script>
 </body>
 </html>
