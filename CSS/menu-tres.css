@@ -1,0 +1,61 @@
+body{
+    background-color: rgb(190, 190, 190);
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main{
+    background-color: grey;
+    padding-bottom: 2%;
+}
+main .container-md{
+    padding-top: 2%;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color:white;
+}
+
+main .container-md .container-info{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+main .container-md .container-info p{
+    color: black;
+    width: 40%;
+}
+
+main .container-md .container-info img{
+    width: 40%;
+    height: auto;
+}
+
+.container-fluid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    align-items: center; 
+    max-width: 800px;
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.container-fluid p{
+    color: white;
+}
+
+.container-fluid img {
+    width: 100%; 
+    max-width: 200px; 
+    justify-self: center; 
+}

@@ -40,3 +40,36 @@ ul li img {
     width: 40px; /* Ajusta el tamaño de los iconos */
     height: auto;
 }
+
+
+@media (max-width: 750px){
+    .contenedor-social-media{
+        display: none;
+    }
+}
+
+
+/* Para iPads y dispositivos entre 767px y 1024px (modo vertical) */
+@media (min-width: 767px) and (max-width: 1024px) and (orientation: portrait) {
+    .contenedor-social-media{
+        background-color: transparent;
+    }
+
+    #social-media-id{
+        background-color: transparent;
+        margin-left: 40%;
+    }
+}
+
+/* Para iPads y dispositivos entre 767px y 1024px (modo horizontal) */
+@media (min-width: 767px) and (max-width: 1024px) and (orientation: landscape) {
+    .contenedor-social-media{
+        background-color: transparent;
+    }
+
+    #social-media-id{
+        background-color: transparent;
+        margin-left: 30%;
+    }
+}
+
