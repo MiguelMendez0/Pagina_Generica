@@ -1,0 +1,42 @@
+.contenedor-social-media {
+    width: 100px; /* Ajusta según lo necesario */
+    height: auto; /* Asegura que se expanda según el contenido */
+    position: fixed; /* Fija el contenedor en la pantalla */
+    right: 10px; /* Ajusta la posición en la pantalla */
+    top: 60%; /* Lo centra verticalmente */
+    transform: translateY(-50%); /* Ajuste de alineación */
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente opcional */    
+    padding-bottom: 1%;
+    padding-top: 1%;
+ 
+    border-radius: 70px; /* Bordes redondeados */
+}
+
+#social-media-id {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Alinea los íconos en vertical */
+    text-align: center;
+    gap: 20px;
+    padding-top: 15%;
+    padding-bottom: 10%;
+    margin-left: 11%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+ul li {
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+}
+
+/* Asegurar que las imágenes sean visibles y bien ajustadas */
+ul li img {
+    width: 40px; /* Ajusta el tamaño de los iconos */
+    height: auto;
+}

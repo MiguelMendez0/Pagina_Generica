@@ -14,3 +14,20 @@
         })
         .catch(error => console.error('Error al cargar el footer:', error));
 
+ // Cargar el social media
+ fetch('./COMPONENTS/social-media.html')  // Asegúrate de que la ruta es correcta
+ .then(response => {
+     if (!response.ok) {
+         throw new Error('No se pudo cargar el archivo de social media');
+     }
+     return response.text();
+ })
+ .then(data => {
+     let contenedor = document.getElementById('contenedor-social-media');
+     if (data.trim() !== '') {
+         contenedor.innerHTML = data;
+     } else {
+         contenedor.style.display = 'none'; // Ocultar si está vacío
+     }
+ })
+ .catch(error => console.error('Error al cargar social-media:', error));
