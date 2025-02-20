@@ -57,6 +57,50 @@ ul{
 }
 
 
+.container-login{
+    width: 100%;
+    height: 50%;
+    position:absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+.container-login p,
+.container-login ul {
+    margin: 0; /* Elimina el margen */
+    margin-bottom: 0.5%;
+    padding: 0; /* Opcional, si también quieres eliminar el padding */
+}
+
+
+.container-login p{
+    color: white;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400px;
+}
+
+.container-login ul{
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.container-login ul li{
+    color:white;
+    text-align: end;
+}
+
+#o{
+    display: none;
+}
+
 /* Para dispositivos con pantallas pequeñas (hasta 766px) */
 @media (max-width: 766px) {
     img{
@@ -96,6 +140,46 @@ ul{
 
     .social-media-movil p{
         color: white;
+    }
+
+    .container-login{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-top: 2%;
+        position: relative;
+    }
+    
+    .container-login p{
+        text-align: center;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+    }
+    
+    .container-login ul{
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        border-radius: 0;
+        background-color: transparent;
+        align-items: center;
+    }
+    
+    #o{
+        background-color: transparent;
+        cursor: inherit;
+    }
+    
+    .container-login ul li{
+        color: white;
+        text-align: center;
+        background-color: rgb(43, 43, 43);
+        padding: 5px 5px;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-radius: 20px;
     }
 }
 

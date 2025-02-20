@@ -1,0 +1,27 @@
+/* Cambiar el color de fondo del body */
+body.bg-info {
+    background-color: #646464 !important; /* Color de fondo personalizado */
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Encavezado de login */
+div.text-center.fs-1.fw-bold{
+    color: white !important;
+}
+
+/* Aumentar la especificidad del selector */
+div.p-5.rounded-5.text-secondary.shadow {
+    background-color: rgb(87, 87, 87) !important;
+}
+
+div.input-group-text.bg-info{
+    background-color: rgb(71, 71, 71) !important;
+}
+
+div.btn.btn-info.text-white.w-100.mt-4.fw-semibold.shadow-sm{
+    background-color: rgb(58, 52, 52) !important;
+}
