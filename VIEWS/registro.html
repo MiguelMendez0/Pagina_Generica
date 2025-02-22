@@ -10,8 +10,10 @@
     <title>Registro</title>
 </head>
 <body>
+    <div id="header-container"></div>
+    <div id="contenedor-social-media"></div>
     <main>
-        <form>
+        <form id="registro"> <!-- El action no es necesario -->
             <div class="form-group">
                 <div class="input-container">
                     <input type="text" name="nombre" id="nombre" required>
@@ -19,17 +21,17 @@
                 </div>
         
                 <div class="input-container">
-                    <input type="text" name="primerapellido" id="primerapellido" required>
+                    <input type="text" name="primerapellido" id="primerapellido" required />
                     <label for="primerapellido">Primer Apellido</label>
                 </div>
         
                 <div class="input-container">
-                    <input type="text" name="segundoapellido" id="segundoapellido" required>
+                    <input type="text" name="segundoapellido" id="segundoapellido" required />
                     <label for="segundoapellido">Segundo Apellido</label>
                 </div>
         
                 <div class="input-container">
-                    <input type="text" id="codigo-postal" name="cp" required>
+                    <input type="text" id="codigo_postal" name="codigo_postal" required>
                     <label for="codigo-postal" id="cod-pos"></label>
                 </div>
         
@@ -59,30 +61,30 @@
                 </div>
         
                 <div class="input-container">
-                    <input type="number" name="num_ext" id="num-ext" min="1" required>
-                    <label for="num-ext">Número Exterior</label>
+                    <input type="number" name="num-ext" id="num-ext" required>
+                    <label for="Número Exterior">Número Exterior</label>
                 </div>
         
                 <div class="input-container">
-                    <input type="number" name="num_int" id="num-int" min="1">
-                    <label for="num-int">Número Interior</label>
+                    <input type="number" name="num-int" id="num-int" required>
+                    <label for="Numero Interior">Número Interior</label>
                 </div>
         
                 <div class="input-container">
-                    <input type="email" name="email" id="correo" required>
+                    <input type="email" name="correo" id="correo" required>
                     <label for="correo">Correo Electrónico</label>
                 </div>
         
                 <div class="input-container">
-                    <input type="password" name="contraseña" id="contraseña" required>
+                    <input type="password" name="contraseña" id="contraseña" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$" required>
                     <label for="contraseña">Contraseña</label>
                 </div>
-        
+                
                 <div class="input-container">
-                    <input type="password" name="contraseña-confirma" id="contraseña-confirma" required>
-                    <label for="contraseña-confirma">Confirmar Contraseña</label>
+                    <input type="password" name="contraseña-confirmada" id="contraseña-confirmada" required>
+                    <label for="contraseña-confirmada">Confirmar Contraseña</label>
                 </div>
-        
+                
                 <div class="checkbox-container">
                     <input type="checkbox" id="check-registro" required>
                     <label for="check-registro">Acepto los términos</label>
@@ -92,7 +94,11 @@
             </div>
         </form>        
     </main>
+    <div id="footer-container"></div>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWqYQAniQLOuWOSal10pEzZmJCaGyXqZI&libraries=places"></script>
     <script src="/JS/autorrellenado-formulario.js"></script>
+    <script src="/JS/componentes.js"></script>
+    <!-- FORMULARIO DE REGISTRO -->
+    <script src="/JS/forms.js"></script>
 </body>
 </html>

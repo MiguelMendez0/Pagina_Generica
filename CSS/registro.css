@@ -42,7 +42,7 @@ form {
     width: 100%;
     height: 60px;
     border-radius: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #4abe4a;
     padding: 10px;
     font-size: 16px;
     background-color: white;
@@ -50,7 +50,7 @@ form {
     padding-top: 5%;
 }
 
-#codigo-postal{
+#codigo_postal{
     padding-top: 0%;
 }
 

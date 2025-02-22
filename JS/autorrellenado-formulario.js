@@ -1,5 +1,5 @@
 function initAutocomplete() {
-    let input = document.getElementById("codigo-postal");
+    let input = document.getElementById("codigo_postal");
 
     let autocomplete = new google.maps.places.Autocomplete(input, {
         types: ["geocode"],
